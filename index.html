@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Services</a></li>
+            
+                <li><a href="#">Portfolio</a></li>
+
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <div class="text">
+                <p>FrontEnd Developer</p>
+                <h1>Hello, <span>I'm Swati HD</span></br> I am from Bangalore</h1>
+            </div>
+            <div class="image">
+                <img src="images/image1.jpg">
+            </div>
+        </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="desc">
+                        <p>An IT professional with 3+ years of experience and 1 year into Frontend Development.
+                        <p>Have solid understanding of Web Development Technologies and best practices, including HTML,CSS and Javascript.</p> 
+                        <p>Experienced in building Responsive and Dynamic Web Applications, Optimizing Website Performance and Debugging code issues.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')" >Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Javascript</span></li>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>Git</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>JUN 2023 - NOV 2023</span><br>Frontend Developer @ Harlalka Services</li>
+                                <li><span>MAY 2020 - MAR 2023</span><br>Graduate Trainee Engineer @ Huawei</li>
+                                <li><span>MAR 2019 - NOV 2019</span><br>Operations Advisor @ Concentrix</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2014-2018</span><br>B.E</li>
+                                <li><span>2014</span><br>PUC II</li>
+                                <li><span>2012</span><br>SSLC</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    </script>
+</body>
+</html>
