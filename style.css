@@ -5,22 +5,34 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
   
     color: #f5faf4;
     background-color: rgb(5, 5, 5);
     
 }
+
+
+.container{
+    margin-top: 150px;
+}
+.main{
+    max-width:5000px;
+    margin: auto;
+}
 .image{
-    margin-left: 20px;
-    margin-top: -300px;
+    margin-left: 150px;
+    margin-top: -227px;
 }
 #header{
     /* width: 100%; */
     height: 100vh;
     background-size: cover;
     position: relative;
-    margin-left: 1200px;
+    margin-left: 800px;
    
 }
 
@@ -88,7 +100,7 @@ width: 100%;
 }
 .text{
     display: inline;
-    width: 700px;
+    width: 600px;
     margin-top: -600px;
     margin-left: 50px;
 }
@@ -115,9 +127,9 @@ width: 100%;
     flex-basis: 35%;
 }
 .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 30px;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .about-col-2{
@@ -324,11 +336,11 @@ flex-basis: 35%;
 
 .contact-left p{
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 140px;
 }
 
 .social-icons p{
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .social{
@@ -362,17 +374,17 @@ flex-basis: 35%;
     margin-top: 20px;
     padding: 15px;
     color: white;
-    margin-left: 120px;
+    margin-left: 140px;
     text-decoration: none;
     font-size: 15px;
 }
 
 .contact-right form{
-    width: 100%;
+    width: 98%;
 }
 
 form input, form textarea{
-    width: 100%;
+    width: 98%;
     border: 0;
     outline: none;
     background: #262626;
@@ -391,4 +403,15 @@ form input, form textarea{
     color: white;
     text-decoration: none;
     font-size: 15px;
+}
+
+
+nav .fas{
+    display: none;
+}
+
+#msg{
+    color: #61b752;
+    display: block;
+    margin-top: 5px;
 }
