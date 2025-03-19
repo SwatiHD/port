@@ -24,7 +24,7 @@
 
                 <i class="fa-solid fa-circle-xmark"></i>
             </ul>
-            <!-- <i class="fa-solid fa-bars"></i> -->
+            <i class="fa-solid fa-bars"></i>
         </nav>
 
         <div class="header-text">
@@ -172,7 +172,7 @@
     </div>
  </div>
 </div>
-<!-- -------------three tabs transition in about me section----------------------- -->
+<!-- -------------three tabs transition in section work =------------------ -->
     <script>
         var tablinks =document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents")
@@ -205,6 +205,19 @@
         })
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+      <script>
+        let menu = document.querySelector("nav ul");
+let openMenu = document.querySelector(".fa-bars");
+let closeMenu = document.querySelector(".fa-circle-xmark");
+
+openMenu.addEventListener("click", () => {
+    menu.style.right = "0";
+});
+
+closeMenu.addEventListener("click", () => {
+    menu.style.right = "-100%";
+});
       </script>
 </body>
 </html>

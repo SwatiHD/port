@@ -50,6 +50,7 @@ nav{
 
 .logo{
     width: 140px;
+    margin-right: 40px;
 }
 nav ul li{
  display: inline-block;
@@ -414,4 +415,248 @@ nav .fas{
     color: #61b752;
     display: block;
     margin-top: 5px;
+}
+
+/* ----------------css for small sreen--------------------- */
+
+/* nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 660px){
+    #header{
+        background-image: url(images/phone-image.png);
+       
+
+    }
+    .image{
+        margin-top: -500px;
+        margin-left: -800px;
+        z-index: 1;
+        position: relative;
+        max-width: 200px;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+        z-index: 10;
+        margin-top: -200px;
+        position: relative;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 26px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        position: absolute;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 20;
+}
+  
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    font-size: 26px;
+    cursor: pointer;
+    left: 10px !important; /* Force it to the left */
+    /* top: 20px;
+    z-index: 100;
+    }
+
+   nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    /* }  */
+     /* nav ul .fa-bars{
+        
+    top: 20px; 
+    z-index: 100;
+    left: 10px !important; 
+    order: -1;
+    margin-left: 400px;
+    } */
+    /* html,body{
+        width: 60%;
+        min-width : 100vh;
+        overflow-x: hidden;
+    } */
+    /* html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        /* margin: 0;
+        padding: 0;
+    } */ 
+
+    /* .main{
+        max-width:250%;
+        margin: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column; 
+         align-items: center; 
+        width: 100%;
+    }*/
+    * {
+        box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+    /* nav ul { */
+        /* display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center; */
+
+
+        /* background: #ff004f;
+        position: fixed;
+        top: 0;
+        position: absolute;
+        right: 0;
+        width: 200px;
+        height: 60vh;
+        padding-top: 50px;
+        z-index: 20; */
+    /* } */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+}
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .services-list, .work-list {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .text, .image {
+        margin: auto;
+    }
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: rgb(231, 31, 31);
+    width: 200px;
+    height: 60vh;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+
+
+nav ul li {
+    display: block;
+    margin: 20px;
+}
+
+nav .fa-bars {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav .fa-circle-xmark {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        right: -100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-col-1 img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .about-col-2 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-list,
+    .work-list {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .services-list div,
+    .work {
+        margin: 20px auto;
+        width: 90%;
+    }
 }
