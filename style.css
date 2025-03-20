@@ -62,17 +62,17 @@ nav {
   /* Prevents overflow */
   z-index: -10;
 }
-/* container {
-    padding: 10px, 10%;
-} */
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: sticky;
+  background-color: rgb(5, 5, 5);
+  border-bottom: 2px solid #ff004f;
+  z-index: 100;
 }
-
 .logo {
   width: 140px;
   margin-right: 40px;
@@ -296,6 +296,7 @@ nav ul li a:hover::after {
   width: 100%;
   border-radius: 10px;
   display: block;
+  z-index: 10;
   transition: transform 0.5s;
 }
 
@@ -481,7 +482,7 @@ nav .fa-circle-xmark {
 
   html,
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     max-width: 100%;
   }
   .parallax-wrapper {
@@ -563,6 +564,11 @@ nav .fa-circle-xmark {
     right: 60px;
     font-size: 25px;
     cursor: pointer;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
   nav ul {
