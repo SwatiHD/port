@@ -206,18 +206,23 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+<!-- ------------------------------menu operations------------------------------ -->
       <script>
         let menu = document.querySelector("nav ul");
-let openMenu = document.querySelector(".fa-bars");
-let closeMenu = document.querySelector(".fa-circle-xmark");
+        let openMenu = document.querySelector(".fa-bars");
+        let closeMenu = document.querySelector(".fa-circle-xmark");
 
-openMenu.addEventListener("click", () => {
-    menu.style.right = "0";
-});
 
-closeMenu.addEventListener("click", () => {
-    menu.style.right = "-100%";
-});
+            menu.addEventListener("click", ()=>{
+            menu.style.right="-100%";
+            })
+            openMenu.addEventListener("click", () => {
+            menu.style.right = "0";
+            });
+
+            closeMenu.addEventListener("click", () => {
+            menu.style.right = "-100%";
+            });
       </script>
 </body>
 </html>
