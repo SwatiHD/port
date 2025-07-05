@@ -4,9 +4,11 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
 .base {
   background-color: rgb(5, 5, 5);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,6 +18,7 @@ body {
   background-color: rgb(5, 5, 5);
   position: relative;
 }
+
 nav {
   position: sticky;
   top: 0;
@@ -23,17 +26,12 @@ nav {
 }
 
 .container {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .main {
   max-width: 5000px;
   margin: auto;
-}
-
-.image {
-  margin-left: 150px;
-  margin-top: -227px;
 }
 
 #header {
@@ -43,23 +41,42 @@ nav {
   position: relative;
   margin-left: 800px;
 }
+
 .header-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative; /* Ensures text is above the image */
+  position: relative;
+  /* Ensures text is above the image */
 }
+
 .image {
-  position: fixed; /* Keeps it in the background */
-  z-index: -1; /* Pushes it behind text */
+  position: fixed;
+  /* Keeps it in the background */
+  z-index: -1;
+  /* Pushes it behind text */
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: -150px;
+  margin-left: 100px
 }
+
+.test-img {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
 .parallax-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh; /* Image takes full screen height */
-  overflow: hidden;
-  /* Prevents overflow */
+  height: 100vh;
+  /* Image takes full screen height */
   z-index: -10;
 }
 
@@ -73,6 +90,7 @@ nav {
   border-bottom: 2px solid #ff004f;
   z-index: 100;
 }
+
 .logo {
   width: 140px;
   margin-right: 40px;
@@ -139,7 +157,7 @@ nav ul li a:hover::after {
 }
 
 #about {
-  padding: 80px, 0;
+  padding: 100px, 0;
   color: #f2f2f2;
 }
 
@@ -156,10 +174,15 @@ nav ul li a:hover::after {
   width: 80%;
   border-radius: 30px;
   margin-left: 150px;
+  margin-top: 80px;
 }
 
 .about-col-2 {
   flex-basis: 100%;
+}
+
+.about-col-2 h1 {
+  margin-top: 100px;
 }
 
 .sub-title1,
@@ -169,7 +192,11 @@ nav ul li a:hover::after {
   font-weight: 600;
   color: #fff;
   margin-left: 150px;
-  margin-top: 20px;
+}
+
+#services {
+  padding-top: 50px;
+  /* Moves the entire section down */
 }
 
 .desc {
@@ -177,7 +204,7 @@ nav ul li a:hover::after {
   font-weight: 100;
   color: grey;
   margin-left: 150px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .tab-titles {
@@ -234,8 +261,9 @@ nav ul li a:hover::after {
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: 150px;
+
 }
 
 .services-list div {
@@ -298,6 +326,7 @@ nav ul li a:hover::after {
   display: block;
   z-index: 10;
   transition: transform 0.5s;
+  height: 100%;
 }
 
 .layer {
@@ -440,7 +469,7 @@ nav ul {
   position: fixed;
   top: 0;
   right: -100%;
-  background: rgb(231, 31, 31);
+  background: rgb(7, 7, 7);
   width: 200px;
   height: 60vh;
   padding-top: 50px;
@@ -485,27 +514,27 @@ nav .fa-circle-xmark {
     /* overflow-x: hidden; */
     max-width: 100%;
   }
+
   .parallax-wrapper {
     height: 250px;
     z-index: -77;
     margin-top: -110px;
-    z-index: -1; /* Keeps it in the background */
+    z-index: -1;
+    /* Keeps it in the background */
   }
+
   .services-list,
   .work-list {
     grid-template-columns: 1fr;
     margin-left: 0;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 
   .header-text {
     grid-template-columns: 1fr;
     text-align: left;
   }
+
   .text {
     position: relative;
     z-index: 5;
@@ -522,23 +551,74 @@ nav .fa-circle-xmark {
     font-size: 20px;
     margin-left: -100px;
   }
+
   .text,
   .image {
     margin: auto;
   }
+
+  /* .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 200px;
+}
+ .test-img {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 3px solid #8d1010;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: block;
+} */
+  .header-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* Ensures text is above the image */
+  }
+
   .image {
-    /* position: relative; */
+    position: fixed;
+    /* Keeps it in the background */
     z-index: -1;
-    margin-left: 75px;
-    width: 80%;
+    /* Pushes it behind text */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+    margin-top: 150px;
+  }
+
+  .test-img {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     display: block;
+  }
+
+  .parallax-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Image takes full screen height */
+    z-index: -10;
   }
 
   nav ul {
     position: fixed;
     top: 0;
     right: -100%;
-    background: rgb(231, 31, 31);
+    background: rgb(13, 13, 13);
     width: 100px;
     height: 60vh;
     padding-top: 50px;
@@ -565,6 +645,7 @@ nav .fa-circle-xmark {
     font-size: 25px;
     cursor: pointer;
   }
+
   nav {
     position: sticky;
     top: 0;
@@ -586,12 +667,15 @@ nav .fa-circle-xmark {
     align-items: center;
     text-align: center;
   }
+
   .about-col-1 {
     margin-left: -100px;
   }
+
   .about-col-1 img {
     margin-left: 0;
     width: 50%;
+    margin-top: 50px;
   }
 
   .about-col-2 {
@@ -613,6 +697,7 @@ nav .fa-circle-xmark {
   .tab-contents ul li span {
     font-size: 18px;
   }
+
   .services-list,
   .work-list {
     grid-template-columns: 1fr;
@@ -649,4 +734,8 @@ nav .fa-circle-xmark {
 
 .services-list h2 {
   font-size: 25px;
+}
+
+.work {
+  height: 190px;
 }
