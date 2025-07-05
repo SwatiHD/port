@@ -523,6 +523,14 @@ nav .fa-circle-xmark {
     /* Keeps it in the background */
   }
 
+  .parallax-wrapper {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    /* Image takes full screen height */
+    z-index: -10;
+  }
+
   .services-list,
   .work-list {
     grid-template-columns: 1fr;
@@ -606,13 +614,7 @@ nav .fa-circle-xmark {
 
   }
 
-  .parallax-wrapper {
-    position: relative;
-    width: 100%;
-    height: 20vh;
-    /* Image takes full screen height */
-    z-index: -10;
-  }
+
 
   nav ul {
     position: fixed;
